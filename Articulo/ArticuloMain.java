@@ -59,6 +59,7 @@ public class ArticuloMain {
 			        }
                     break;
             case 2:
+            
             System.out.println();
             System.out.println();
             for(articulo a: la.lista ) {
@@ -71,6 +72,7 @@ public class ArticuloMain {
             break;
             
             case 3:
+            
             System.out.println();
             System.out.println();
             for(articulo a: la.lista ) {
@@ -89,9 +91,10 @@ public class ArticuloMain {
                 System.out.println(la.equivalente(codigo));
             break;
             case 5:
-            
+                System.out.println(la.mascaro());
             break;
             case 6:
+                System.out.println(la.reponer());
             break;
             case 7:
         }
