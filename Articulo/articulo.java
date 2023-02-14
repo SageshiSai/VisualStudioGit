@@ -30,21 +30,13 @@ public abstract class articulo {
             this.stock = s;
         }
     
-    public int sumarStock() {
-        Scanner teclado = new Scanner(System.in);
-        int n;
-        System.out.println("Cuanto Stock quieres aumentar?");
-        n = teclado.nextInt();
-        teclado.close();
-        return n;
+    public int sumarStock(int stockNum) {
+        this.stock -= stockNum;
+		return stock;
     }
-    public int quitarStock() {
-        Scanner teclado = new Scanner(System.in);
-        int n;
-        System.out.println("Cuanto Stock quieres restar?");
-        n = teclado.nextInt();
-        teclado.close();
-        return n;
+    public int quitarStock(int stockNum) {
+        this.stock += stockNum;
+		return stock;
     }
     public abstract boolean sano();
     public abstract String printCaracteristicas();
