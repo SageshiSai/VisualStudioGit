@@ -67,10 +67,18 @@ public class ArticuloMain {
             }
             System.out.println();
             System.out.println();
-            
+
             break;
             
             case 3:
+            System.out.println();
+            System.out.println();
+            for(articulo a: la.lista ) {
+                System.out.println(a.sano());
+                
+            }
+            System.out.println();
+            System.out.println();
             break;
             case 4:
             break;
