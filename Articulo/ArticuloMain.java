@@ -87,7 +87,10 @@ public class ArticuloMain {
                 System.out.println("Escriba el codigo");
                 codigoProducto = teclado.nextLine();
                 
-                System.out.println(la.equivalente(codigoProducto));
+                
+                for(articulo a : la.equivalente(codigoProducto)){
+                System.out.println(a.printCaracteristicas());  
+                }
             break;
             case 5:
                 System.out.println(la.mascaro());
