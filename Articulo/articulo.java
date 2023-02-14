@@ -50,7 +50,7 @@ public abstract class articulo {
     public abstract String printCaracteristicas();
     @Override
     public String toString() {
-        return ("Codigo=" + Codigo +"\n"+ "Nombre=" + Nombre +"\n"+ "Marca=" + Marca +"\n"+ "precio=" + precio
+        return ("**********************"+"\n"+"Codigo=" + Codigo +"\n"+ "Nombre=" + Nombre +"\n"+ "Marca=" + Marca +"\n"+ "precio=" + precio
                 +"\n"+ "Stock=" + stock+"\n" );
     }
     //GettersSetters

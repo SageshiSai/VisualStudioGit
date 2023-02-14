@@ -82,8 +82,14 @@ public class ArticuloMain {
             System.out.println();
             break;
             case 4:
+                teclado.nextLine();
+                System.out.println("Escriba el codigo");
+                String codigo = teclado.nextLine();
+                
+                System.out.println(la.equivalente(codigo));
             break;
             case 5:
+            
             break;
             case 6:
             break;

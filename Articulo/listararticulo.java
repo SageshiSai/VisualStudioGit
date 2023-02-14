@@ -8,7 +8,7 @@ public class listararticulo {
 
     public void filldata() {
         lista.add(new refresco("c1", "CocaCola", "CocaCola", 1.50, 300, "Dulce", false, true, 90));
-        lista.add(new refresco("f2", "fanta", "CocaCola", 2.0, 200, "Naranja", true, true, 100));
+        lista.add(new refresco("f2", "fanta", "CocaCola", 1.50, 200, "Naranja", true, true, 100));
         lista.add(new refresco("a3", "Aquarius", "CocaCola", 3.0, 100, "Limon", true, true, 23));
         lista.add(new refresco("s4", "Schweppes", "Pepper Snapple", 4, 50, "Naranja", true, true, 10));
         lista.add(new vino("b5", "BlancoOrgulloso", "LosHumildes", 9.0, 100, "Blanco", "francia", 2010, "Orgullosa"));
