@@ -59,6 +59,15 @@ public class ArticuloMain {
 			        }
                     break;
             case 2:
+            System.out.println();
+            System.out.println();
+            for(articulo a: la.lista ) {
+                System.out.println(a.printCaracteristicas());
+                
+            }
+            System.out.println();
+            System.out.println();
+            
             break;
             
             case 3:
