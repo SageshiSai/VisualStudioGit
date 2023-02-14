@@ -25,9 +25,9 @@ public class refresco extends articulo {
         this.gas = g;
         this.azucar = a;
     }
-   @Override
+    @Override
     public String printCaracteristicas() {
-        return (super.toString()+"Sabor=" + sabor + ", Zumo=" + zumo + ", Gas=" + gas + ", Azucar=" + azucar);
+        return (super.toString()+"Sabor=" + sabor +"\n"+ "Zumo=" + zumo + "\n"+"Gas=" + gas +"\n"+ "Azucar=" + azucar);
     }
     @Override
     public boolean sano() {
@@ -38,6 +38,5 @@ public class refresco extends articulo {
             return false;
         }
     }
-     
     
 }

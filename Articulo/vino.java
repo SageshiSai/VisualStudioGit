@@ -29,7 +29,8 @@ public class vino extends articulo{
     }
     @Override
     public String printCaracteristicas() {
-        return (super.toString() + "Color=" + color + ", Origen=" + origen + ", Año=" + año + ", Uva=" + uva);
+        return (super.toString() + "Color: " + color + "\n" +  "Origen: " + origen + "\n" + "Año: " + año + "\n" +"Uva: " + uva);
+		
     }
     @Override
     public boolean sano() {
