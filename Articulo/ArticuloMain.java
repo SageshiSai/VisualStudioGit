@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class ArticuloMain {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
         
         Scanner teclado = new Scanner(System.in);
         int n = 0;
@@ -86,9 +85,9 @@ public class ArticuloMain {
             case 4:
                 teclado.nextLine();
                 System.out.println("Escriba el codigo");
-                String codigo = teclado.nextLine();
+                codigoProducto = teclado.nextLine();
                 
-                System.out.println(la.equivalente(codigo));
+                System.out.println(la.equivalente(codigoProducto));
             break;
             case 5:
                 System.out.println(la.mascaro());
@@ -96,7 +95,11 @@ public class ArticuloMain {
             case 6:
                 System.out.println(la.reponer());
             break;
+
             case 7:
+            teclado.nextLine();
+                System.out.println("Escriba el codigo");
+                codigoProducto = teclado.nextLine();
         }
         }while(n != 0);
         teclado.close();
