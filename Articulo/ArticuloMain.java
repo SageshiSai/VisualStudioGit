@@ -113,7 +113,7 @@ public class ArticuloMain {
                     if(a.Codigo.equals(codigoProducto)){
                             System.err.println("Stock a aumentar");
                             num = teclado.nextInt();
-                            a.sumarStock();
+                            a.sumarStock(num);
                             System.out.println("Stock Aumentado");
                     }
                 }

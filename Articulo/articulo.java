@@ -1,7 +1,5 @@
 package Articulo;
 
-import java.util.Scanner;
-
 public abstract class articulo {
     //Declaramos las variables necesarias 
     protected String Codigo;
