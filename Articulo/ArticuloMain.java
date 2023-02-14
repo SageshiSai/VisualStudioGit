@@ -93,16 +93,30 @@ public class ArticuloMain {
                 }
             break;
             case 5:
-                System.out.println(la.mascaro());
+            for(articulo a : la.mascaro()){
+                System.out.println(a.printCaracteristicas());
+            }
+                
             break;
             case 6:
-                System.out.println(la.reponer());
+                for(articulo a : la.reponer()){
+                    System.out.println(a.printCaracteristicas());
+                }
             break;
 
             case 7:
             teclado.nextLine();
                 System.out.println("Escriba el codigo");
                 codigoProducto = teclado.nextLine();
+
+                for(articulo a : la.lista){
+                    if(a.Codigo.equals(codigoProducto)){
+                            System.err.println("Stock a aumentar");
+                            num = teclado.nextInt();
+                            a.sumarStock();
+                            System.out.println("Stock Aumentado");
+                    }
+                }
         }
         }while(n != 0);
         teclado.close();
