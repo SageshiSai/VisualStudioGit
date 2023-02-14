@@ -47,8 +47,11 @@ public class ArticuloMain {
 							cantidadProducto = teclado.nextInt();
 							double totalLinea = la.precio(codigoProducto) * cantidadProducto;
 							f.añadirLinea(codigoProducto, cantidadProducto, totalLinea);
-							
-							
+							for(articulo a: la.lista) {
+								if(a.Codigo.equals(codigoProducto) AND la.Stock(codigoProducto)>= cantidadProducto) {
+									a.quitarStock(cantidadProducto);
+								}
+							}
 						}else {
 							f.print();
 							System.out.println();

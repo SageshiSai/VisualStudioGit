@@ -67,4 +67,11 @@ public class listararticulo {
 	
 		return precio;
     }
+    public int Stock(String Codigo){
+        int stock = 0;
+        for(articulo a : lista){
+            stock = a.getStock();
+        }
+        return stock;
+    }
 }
