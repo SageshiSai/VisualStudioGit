@@ -74,8 +74,9 @@ public class ArticuloMain {
             System.out.println();
             System.out.println();
             for(articulo a: la.lista ) {
-                System.out.println(a.sano());
-                
+                if(a.sano()){
+                System.out.println(a.printCaracteristicas());  
+                }
             }
             System.out.println();
             System.out.println();
