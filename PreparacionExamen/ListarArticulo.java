@@ -53,7 +53,14 @@ public class ListarArticulo {
         return ListaMismoPrecio;
     }
     public double precio(String Codigo){
-        return precio(Codigo);
+        double precio = 0;
+		for(Articulo a :lista) {
+			if(a.getCodigo().equals(Codigo)){
+				precio = a.getPrecio();
+			}
+		}
+	
+		return precio;
     }
 
     
