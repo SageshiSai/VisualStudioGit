@@ -21,14 +21,19 @@ public class Refresco extends Articulo {
 
     @Override
     public String printCaracteristicas() {
-        return ("Sabor: "+sabor+ "\n" + "Zumo: "+ zumo + "\n" + "Gas: "+ gas + "\n" + "Azucar: "+ azucar);
+        return (super.toString()+"Sabor: "+sabor+ "\n" + "Zumo: "+ zumo + "\n" + "Gas: "+ gas + "\n" + "Azucar: "+ azucar);
     }
 
 
 
     @Override
     public boolean sano() {
-        return false;
+        if (azucar < 25){
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     

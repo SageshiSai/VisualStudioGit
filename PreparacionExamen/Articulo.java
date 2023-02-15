@@ -18,6 +18,7 @@ public abstract class Articulo {
     }
 
     public int sumarStock(int sumarNum){
+        
         return 0;
     }
     public int quitarStock(int quitarNum){
