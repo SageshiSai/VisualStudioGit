@@ -16,5 +16,12 @@ public class Factura {
         this.lineaFacturas = array;
         this.total = t;
     }
-    
+
+    public void añadirLineas(String codigo, int cantidad, double total){
+        lineaFacturas.add(new LineaFactura(codigo, cantidad, total));
+    }
+
+    public void print(){
+        System.out.println();
+    }
 }
