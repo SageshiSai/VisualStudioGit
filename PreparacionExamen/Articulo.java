@@ -18,11 +18,13 @@ public abstract class Articulo {
     }
 
     public int sumarStock(int sumarNum){
+        this.stock += sumarNum;
+		return stock;
         
-        return 0;
     }
     public int quitarStock(int quitarNum){
-        return 0;
+        this.stock -= quitarNum;
+		return stock;
     }
     public abstract String printCaracteristicas();
     public abstract boolean sano();
