@@ -10,5 +10,8 @@ public class LineaFactura {
         this.cantidad = cc;
         this.totalLinea = t;
     }
-    
+    @Override
+	public String toString() {
+		return "LineaFactura [Codigo=" + codigo + ", Cantidad=" + cantidad + ", totalLinea=" + totalLinea + "]";
+	}
 }
