@@ -28,6 +28,7 @@ public class ArticuloMain {
         switch(n) {
             case 1:
             teclado.nextLine();
+            codigoProducto = "";
 					System.out.println("Numero factura");
 					int num = teclado.nextInt();
 					teclado.nextLine();
@@ -46,12 +47,20 @@ public class ArticuloMain {
 							System.out.println("Cantidad producto:");
 							cantidadProducto = teclado.nextInt();
 							double totalLinea = la.precio(codigoProducto) * cantidadProducto;
+                            if(cantidadProducto <= la.Stock(codigoProducto)){
 							f.añadirLinea(codigoProducto, cantidadProducto, totalLinea);
 							for(articulo a: la.lista) {
-								if(a.Codigo.equals(codigoProducto) AND la.Stock(codigoProducto)>= cantidadProducto) {
+								if(a.Codigo.equals(codigoProducto)) {
 									a.quitarStock(cantidadProducto);
+                                    
 								}
-							}
+                                
+                            }
+							}else{
+                                System.out.println("No hay Stock Suficiente");
+                            
+                        }
+                            
 						}else {
 							f.print();
 							System.out.println();

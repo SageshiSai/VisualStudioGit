@@ -70,7 +70,9 @@ public class listararticulo {
     public int Stock(String Codigo){
         int stock = 0;
         for(articulo a : lista){
+            if(a.getCodigo().equals(Codigo)){
             stock = a.getStock();
+            }
         }
         return stock;
     }
