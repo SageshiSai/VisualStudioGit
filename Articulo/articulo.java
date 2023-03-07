@@ -29,11 +29,11 @@ public abstract class articulo {
         }
     
     public int sumarStock(int stockNum) {
-        this.stock -= stockNum;
+        this.stock += stockNum;
 		return stock;
     }
     public int quitarStock(int stockNum) {
-        this.stock += stockNum;
+        this.stock -= stockNum;
 		return stock;
     }
     public abstract boolean sano();
