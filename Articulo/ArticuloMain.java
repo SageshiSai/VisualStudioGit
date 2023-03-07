@@ -51,8 +51,15 @@ public class ArticuloMain {
 							f.añadirLinea(codigoProducto, cantidadProducto, totalLinea);
 							for(articulo a: la.lista) {
 								if(a.Codigo.equals(codigoProducto) && la.Stock(codigoProducto)>= cantidadProducto) {
+
+								if(a.Codigo.equals(codigoProducto)) {
+
+									a.quitarStock(cantidadProducto);
+                                    
+								}
+                                
                             }
-						    else{
+							}else{
                                 System.out.println("No hay Stock Suficiente");
                             
                         }
