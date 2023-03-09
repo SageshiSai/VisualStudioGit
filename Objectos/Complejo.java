@@ -1,8 +1,9 @@
 package Objectos;
 
 import java.util.Scanner;
+import java.io.Serializable;;
 
-public class Complejo implements Comparable<Complejo>{
+public class Complejo implements Comparable<Complejo>, Serializable{
     // defino la clase Complejo
     // propiedades
     private double real;

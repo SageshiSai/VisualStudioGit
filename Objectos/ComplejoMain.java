@@ -1,5 +1,9 @@
 package Objectos;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.util.Scanner;
 
 public class ComplejoMain {
@@ -49,8 +53,26 @@ public class ComplejoMain {
         System.out.println("Complejo:");
         c1.leer(teclado);
         System.out.println("Complejo Leido: "+c1);
+
+        
+        Complejo c;
+        try {
+            FileOutputStream fos = new FileOutputStream("complejo.dat");
+            ObjectOutputStream oos = new ObjectOutputStream (fos);
+            c = new Complejo(5,7);
+            oos.writeObject(c);
+            
+            oos.close();
+            fos.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+        
         
         // cierro teclado
+        
         teclado.close();
     }
 }
