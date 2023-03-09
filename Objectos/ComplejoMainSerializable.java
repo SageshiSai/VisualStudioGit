@@ -1,10 +1,9 @@
-package Objectos.Objectos;
+package Objectos;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
-import Objectos.Complejo;
 
 public class ComplejoMainSerializable {
     public static void main(String[] args) {
