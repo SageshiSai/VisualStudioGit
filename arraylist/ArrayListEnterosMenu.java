@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class ArrayListEnterosMenu {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
         ArrayList<Double> ArrayList = new ArrayList<Double>();
         Scanner teclado = new Scanner(System.in);
         int opcion;
