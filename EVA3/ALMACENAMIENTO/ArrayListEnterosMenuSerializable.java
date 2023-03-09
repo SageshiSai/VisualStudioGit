@@ -14,7 +14,7 @@ public class ArrayListEnterosMenuSerializable {
         ArrayList<Integer> ArrayList = new ArrayList<Integer>();
         Scanner teclado = new Scanner(System.in);
         int opcion;
-        int a;
+        Integer a=0;
         FileInputStream fis;
         ObjectInputStream ois;
         boolean Modificado = false;
