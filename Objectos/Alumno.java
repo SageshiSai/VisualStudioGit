@@ -51,6 +51,6 @@ public void leer(Scanner teclado) {
         d = teclado.nextLine();
     }
     this.grupo = d;
-}
     
+}
 }

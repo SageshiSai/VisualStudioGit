@@ -81,7 +81,7 @@ public class ArrayListAlumnosMenu {
                         return (-comparacion);
                     }
                     else{
-                     return (-comparacion);   
+                    return (-comparacion);   
                     }             
                 } 
             });
