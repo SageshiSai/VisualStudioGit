@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class ArticuloMain {
 
-    public static void main(String[] args) {
-        
+public static void main(String[] args) {
+    
         Scanner teclado = new Scanner(System.in);
         int n = 0;
         int cantidadProducto = 0;
@@ -59,18 +59,17 @@ public class ArticuloMain {
 								}
                                 
                             }
-							}else{
+                        else{
                                 System.out.println("No hay Stock Suficiente");
                             
-                        }
-                            
-						}else {
+                        }else {
 							f.print();
 							System.out.println();
 							System.out.println();
 						}
 						
 			        }
+                }
                     break;
             case 2:
             
@@ -135,9 +134,4 @@ public class ArticuloMain {
         }
         }while(n != 0);
         teclado.close();
-        
-        
-        
     }
-
-}

@@ -1,8 +1,8 @@
-package evaluacion2;
+package Objectos;
 
 import java.util.Scanner;
 
-public class PersonaT5 implements Comparable<PersonaT5>{
+public class PersonaT51 implements Comparable<PersonaT51>{
 
 	// defino la clase Persona
 	// propiedades
@@ -12,7 +12,7 @@ public class PersonaT5 implements Comparable<PersonaT5>{
 	private FechaT5 fechanacimiento;
 	
 	// constructor por defecto
-	public PersonaT5(){
+	public PersonaT51(){
 		this.dni = "";
 		this.nombre = "";
 		this.apellidos = "";
@@ -20,7 +20,7 @@ public class PersonaT5 implements Comparable<PersonaT5>{
 	}
 	
 	// constructor copia
-	public PersonaT5(PersonaT5 p){
+	public PersonaT51(PersonaT51 p){
 		this.dni = p.dni;
 		this.nombre = p.nombre;
 		this.apellidos = p.apellidos;
@@ -28,13 +28,13 @@ public class PersonaT5 implements Comparable<PersonaT5>{
 	}
 
 	// constructores personalizados
-	public PersonaT5(String d, String n, String a){
+	public PersonaT51(String d, String n, String a){
 		this.dni = d;
 		this.nombre = n;
 		this.apellidos = a;
 		this.fechanacimiento = new FechaT5();
 	}
-	public PersonaT5(String d, String n, String a, FechaT5 f){
+	public PersonaT51(String d, String n, String a, FechaT5 f){
 		this.dni = d;
 		this.nombre = n;
 		this.apellidos = a;
@@ -99,19 +99,19 @@ public class PersonaT5 implements Comparable<PersonaT5>{
 			// si es el mismo objeto
 			return true;
 		if (obj == null)
-			// si obj no está creado
+			// si obj no estï¿½ creado
 			return false;
 		if (getClass() != obj.getClass())
 			// si los objetos NO son de la misma clase
 			return false;
 		// comparo el valor de las Propiedades
-		PersonaT5 other = (PersonaT5) obj;
+		PersonaT51 other = (PersonaT51) obj;
 		return (this.dni.equals(other.dni));
 	}
 
 	// compareTo
 	@Override
-	public int compareTo(PersonaT5 other) {
+	public int compareTo(PersonaT51 other) {
 		// comparo el valor de las Propiedades
 		return (this.dni.compareTo(other.dni));
 	}

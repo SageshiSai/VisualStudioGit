@@ -1,6 +1,8 @@
 package Objectos;
 
-public class Persona {
+import java.io.Serializable;
+
+public class Persona implements Serializable {
 private String nombre;
 private int Edad;
 private String dni;

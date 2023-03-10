@@ -25,7 +25,7 @@ this.año = f.año;
 public Fecha(int d, int m, int a){
 if(d >= 1 && d <=31){
     //Si es valido
-  this.dia = d;  
+    this.dia = d;  
 }
 else{
 //Si NO es un dia valido
@@ -64,11 +64,11 @@ public void setDia(int dia) {
     //Comprobamos que sea valido
     if(dia >= 1 && dia <=31){
         //Si es valido
-      this.dia = dia;  
+    this.dia = dia;  
     }
     else{
         //Si NO es valido, sacamos un mensaje de Error
-    System.out.println("No se ha modificado el dia")
+    System.out.println("No se ha modificado el dia");
 }
 public int getMes() {
 	return mes;
@@ -81,7 +81,7 @@ public void setMes(int mes) {
     }
     else {
         //Si NO es valido, sacamos un mensaje de Error
-    System.out.println("No se ha modificado el mes")
+    System.out.println("No se ha modificado el mes");
     }
 }
 public int getAño() {
@@ -113,7 +113,7 @@ public boolean equals(Object obj){
 }
 //CompareTo
 @Override
-public int compareTo(Fecha other)
+public int compareTo(Fecha other){
 if (this.año > other.año){
     return(1);
 
@@ -157,5 +157,10 @@ public void leer (Scanner sc){
     }
     System.out.println("Agrega año: ");
     this.dia=sc.nextInt();
+}
+@Override
+public int compareTo(Fecha o) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
 }
 }

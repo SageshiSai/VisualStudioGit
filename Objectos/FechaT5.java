@@ -1,8 +1,9 @@
 package Objectos;
 
+import java.io.Serializable;
 import java.util.Scanner;
 
-public class FechaT5 implements Comparable<FechaT5>{
+public class FechaT5 implements Comparable<FechaT5>, Serializable{
 
 
 	// defino la clase Fecha

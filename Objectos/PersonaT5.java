@@ -1,8 +1,9 @@
 package Objectos;
 
+import java.io.Serializable;
 import java.util.Scanner;
 
-public class PersonaT5 implements Comparable<PersonaT5>{
+public class PersonaT5 implements Comparable<PersonaT5>, Serializable{
 
     // defino la clase Persona
     // propiedades
