@@ -2,7 +2,7 @@ package Objectos;
 
 import java.util.Scanner;
 
-public class Alumno extends PersonaT5 {
+public class Alumno extends PersonaT5{
 
 private String grupo;
 
