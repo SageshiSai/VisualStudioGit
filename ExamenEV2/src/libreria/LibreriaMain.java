@@ -76,7 +76,7 @@ public class LibreriaMain {
 					String dNi = "";
 					dNi = teclado.nextLine();
 					pos = li.posicionSocio(dNi);
-					li.listaSocios();
+					System.out.println(pos);//IRRELEVANTE
 					s.print();
 					break;
 			}
