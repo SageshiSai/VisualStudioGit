@@ -5,9 +5,10 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry excluding="Objectos/|ExamenEV2/src/" kind="src" path=""/>
+	<classpathentry excluding="Objectos/|ExamenEV2/src/|EVA3/BaseDatosProg/" kind="src" path=""/>
 	<classpathentry kind="src" path="ExamenEV2/src"/>
 	<classpathentry kind="src" path="Objectos"/>
+	<classpathentry kind="src" path="EVA3/BaseDatosProg"/>
 	<classpathentry kind="lib" path="EVA3/mysql-connector-java-8.0.18.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
