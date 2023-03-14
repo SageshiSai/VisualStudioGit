@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "java (buildArtifact)",
+			"targetPath": "${workspaceFolder}/${workspaceFolderBasename}.jar",
+			"elements": [
+				"${compileOutput:ExamenEV2}",
+				"${dependencies:ExamenEV2}",
+				"${compileOutput:VisualStudioGit_1b0f5914}",
+				"${dependencies:VisualStudioGit_1b0f5914}"
+			],
+			"problemMatcher": [],
+			"label": "java (buildArtifact): VisualStudioGit"
+		}
+	]
+}
